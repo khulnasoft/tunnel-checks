@@ -1,0 +1,44 @@
+name: test rego
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**/*.md"
+      - "LICENSE"
+  pull_request:
+    paths-ignore:
+      - "**/*.md"
+      - "LICENSE"
+  merge_group:
+  workflow_dispatch:
+
+env:
+  GO_VERSION: "1.22"
+
+jobs:
+  opa-tests:
+    name: OPA tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: Setup OPA
+        uses: ./.github/actions/setup-opa
+
+      - name: OPA Format
+        run: |
+          files=$(opa fmt --list . | grep -v vendor || true)
+          if [ -n "$files" ]; then
+            echo "=== The following files are not formatted ==="
+            echo "$files"
+            exit 1
+          fi
+
+      - name: Test Rego checks
+        run: make test-rego
