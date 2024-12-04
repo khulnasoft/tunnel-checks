@@ -1,4 +1,5 @@
 # These owners will be the default owners and reviewers for everything in
-# the repo. 
-*       @simar7
 
+# the repo.
+
+-       @khulnasoft-bot
