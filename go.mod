@@ -7,7 +7,7 @@ toolchain go1.23.0
 require (
 	github.com/aws-cloudformation/rain v1.19.0
 	github.com/hashicorp/hcl/v2 v2.23.0
-	github.com/khulnasoft/tunnel v0.0.1
+	github.com/khulnasoft/tunnel v0.0.2
 	github.com/liamg/iamgo v0.0.9
 	github.com/open-policy-agent/opa v0.70.0
 	github.com/owenrumney/squealer v1.2.5
@@ -67,7 +67,6 @@ require (
 	github.com/aquasecurity/go-version v0.0.0-20241105054539-1951e80d786f // indirect
 	github.com/aquasecurity/table v1.8.0 // indirect
 	github.com/aquasecurity/tml v0.6.1 // indirect
-	github.com/aquasecurity/trivy-checks v1.4.0 // indirect
 	github.com/asaskevich/govalidator v0.0.0-20230301143203-a9d515a09cc2 // indirect
 	github.com/aws/aws-sdk-go v1.55.5 // indirect
 	github.com/aws/aws-sdk-go-v2 v1.32.5 // indirect
@@ -133,6 +132,7 @@ require (
 	github.com/docker/go-connections v0.5.0 // indirect
 	github.com/docker/go-metrics v0.0.1 // indirect
 	github.com/docker/go-units v0.5.0 // indirect
+	github.com/dsnet/compress v0.0.1 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/emicklei/go-restful/v3 v3.11.0 // indirect
 	github.com/emirpasic/gods v1.18.1 // indirect
@@ -215,7 +215,7 @@ require (
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
 	github.com/khulnasoft-lab/tunnel-java-db v0.0.0-20240907154440-0d77c2623acb // indirect
-	github.com/khulnasoft/tunnel-kubernetes v0.5.1 // indirect
+	github.com/khulnasoft/tunnel-kubernetes v0.5.2 // indirect
 	github.com/klauspost/compress v1.17.11 // indirect
 	github.com/knqyf263/go-apk-version v0.0.0-20200609155635-041fdbb8563f // indirect
 	github.com/knqyf263/go-deb-version v0.0.0-20241115132648-6f4aee6ccd23 // indirect
@@ -386,12 +386,12 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	helm.sh/helm/v3 v3.16.3 // indirect
-	k8s.io/api v0.31.2 // indirect
+	k8s.io/api v0.31.3 // indirect
 	k8s.io/apiextensions-apiserver v0.31.1 // indirect
-	k8s.io/apimachinery v0.31.2 // indirect
+	k8s.io/apimachinery v0.31.3 // indirect
 	k8s.io/apiserver v0.31.2 // indirect
 	k8s.io/cli-runtime v0.31.2 // indirect
-	k8s.io/client-go v0.31.2 // indirect
+	k8s.io/client-go v0.31.3 // indirect
 	k8s.io/component-base v0.31.2 // indirect
 	k8s.io/klog/v2 v2.130.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340 // indirect
