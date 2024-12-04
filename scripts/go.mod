@@ -2,8 +2,6 @@ module github.com/khulnasoft/tunnel-checks/bundle
 
 go 1.22.0
 
-toolchain go1.22.2
-
 require (
 	github.com/docker/docker v26.1.5+incompatible
 	github.com/testcontainers/testcontainers-go v0.31.0
