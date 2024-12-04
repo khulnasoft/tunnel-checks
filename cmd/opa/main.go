@@ -7,7 +7,7 @@ import (
 	"github.com/open-policy-agent/opa/cmd"
 
 	"github.com/khulnasoft/tunnel-checks/pkg/rego"
-	_ "github.com/khulnasoft/tunnel/pkg/iac/rego" // register Built-in Functions from Trivy
+	_ "github.com/khulnasoft/tunnel/pkg/iac/rego" // register Built-in Functions from Tunnel
 )
 
 func main() {
