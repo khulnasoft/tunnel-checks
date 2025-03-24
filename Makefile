@@ -1,4 +1,5 @@
 OUTDATED_API_DATA_URL=https://raw.githubusercontent.com/khulnasoft/tunnel-db-data/refs/heads/main/k8s/api/k8s-outdated-api.json
+OUTDATED_API_CHECK=checks/kubernetes/workloads/outdated_api.rego
 DYNAMIC_REGO_FOLDER=./checks/kubernetes/policies/dynamic
 BUNDLE_FILE=bundle.tar.gz
 REGISTRY_PORT=5111
